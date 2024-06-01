@@ -72,8 +72,17 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
         .info {
-            width: calc(100% - 20px);
-            margin-bottom: 20px;
+            width: 60%;
+            margin: 20px auto;
+            text-align: center;
+            background: #1c2a35;
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .info h2 {
+            color: #00acc1;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
         }
         h2 {
             color: #00acc1;
@@ -169,6 +178,9 @@
             .info, .signup, .preorder, .features, .contact {
                 margin: 10px 0;
             }
+            .info {
+                width: 80%;
+            }
         }
         @media (max-width: 480px) {
             header {
@@ -233,7 +245,15 @@
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
                     <button type="submit">Send Message</button>
-                
+                </form>
+                <p><strong>Office Address:</strong> 123 Quantum St, Tech City, Innovation Land</p>
+                <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                <p><strong>Email:</strong> contact@quantumleap.com</p>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
             </div>
         </div>
     </div>
