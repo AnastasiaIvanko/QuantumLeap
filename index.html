@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumLeap - The Future of Quantum Computing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f1c24;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(90deg, #1a237e, #00acc1);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideInDown 1s ease-in-out;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #14212b;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-top: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-grow: 1;
+        }
+        .info, .signup, .preorder, .features, .contact {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: #1c2a35;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .info:hover, .signup:hover, .preorder:hover, .features:hover, .contact:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .info {
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00acc1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.8em;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .features i {
+            font-size: 2em;
+            color: #00acc1;
+            margin-right: 10px;
+        }
+        .signup form, .preorder form, .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .signup form input, .signup form button, .preorder form input, .preorder form button, .contact form input, .contact form textarea, .contact form button {
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .signup form input:focus, .signup form button:focus, .preorder form input:focus, .preorder form button:focus, .contact form input:focus, .contact form textarea:focus, .contact form button:focus {
+            outline: none;
+            border-color: #1a237e;
+            box-shadow: 0 0 5px rgba(26, 35, 126, 0.5);
+        }
+        .signup form button, .preorder form button, .contact form button {
+            background-color: #00acc1;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .signup form button:hover, .preorder form button:hover, .contact form button:hover {
+            background-color: #1a237e;
+            transform: translateY(-5px);
+        }
+        footer {
+            background: linear-gradient(90deg, #1a237e, #00acc1);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #00acc1, #1a237e);
+            top: 0;
+            left: 0;
+        }
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .main-content {
+                flex-direction: column;
+            }
+            .info, .signup, .preorder, .features, .contact {
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 0;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .signup form input, .signup form button, .preorder form input, .preorder form button, .contact form input, .contact form textarea, .contact form button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QuantumLeap</h1>
+        <p>The Future of Quantum Computing</p>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>About Us</h2>
+            <p>QuantumLeap is at the forefront of quantum computing, providing cutting-edge solutions that revolutionize the way we process information. Our innovative quantum algorithms and hardware accelerate complex computations, enabling breakthroughs in various fields including cryptography, materials science, and artificial intelligence.</p>
+        </div>
+        <div class="main-content">
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><i class="fas fa-bolt"></i> Lightning-fast processing speeds</li>
+                    <li><i class="fas fa-lock"></i> Advanced cryptographic capabilities</li>
+                    <li><i class="fas fa-brain"></i> Enhanced AI integration</li>
+                    <li><i class="fas fa-atom"></i> Revolutionary quantum algorithms</li>
+                    <li><i class="fas fa-shield-alt"></i> Robust security protocols</li>
+                </ul>
+            </div>
+            <div class="signup">
+                <h2>Stay Updated</h2>
+                <p>Join our mailing list to stay updated with the latest news and developments in quantum computing.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="preorder">
+                <h2>Preorder Now</h2>
+                <p>Be the first to experience the power of quantum computing. Preorder your QuantumLeap device today!</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Preorder</button>
+                </form>
+            </div>
+            <div class="contact">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or need further information, please contact us:</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 QuantumLeap. All rights reserved.</p>
+    </footer>
+</body>
+</html>
